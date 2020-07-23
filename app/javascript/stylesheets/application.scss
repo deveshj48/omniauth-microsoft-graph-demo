@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// Customizations
+@import "custom";
+
+// Bulma
+// yarn add bulma
+@import "~bulma/bulma";
+
+// Fontawesome 5
+// yarn add @fortawesome/fontawesome-free
+// yarn add @fortawesome/free-solid-svg-icons
+// yarn add @fortawesome/free-regular-svg-icons
+// yarn add @fortawesome/free-brands-svg-icons
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
