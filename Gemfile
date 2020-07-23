@@ -56,5 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Authentication
 gem 'devise'
 gem "omniauth-rails_csrf_protection"
-gem 'omniauth-microsoft-graph', git: 'git@github.com:kuyio/omniauth-microsoft-graph.git'
+gem 'omniauth-microsoft-graph', github: 'kuyio/omniauth-microsoft-graph'
 
