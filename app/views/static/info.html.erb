@@ -1,0 +1,13 @@
+<section class="hero is-primary is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Welcome <%= current_user.name %>!
+      </h1>
+      <h2 class="subtitle">
+        Your registered email address is <%= current_user.email %>
+      </h2>
+      <%= link_to "Sign out", destroy_user_session_path, class: "button is-danger mt-5" %>
+    </div>
+  </div>
+</section>

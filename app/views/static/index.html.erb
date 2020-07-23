@@ -1,15 +1,19 @@
 <section class="hero is-primary is-fullheight">
   <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        <span class="icon">
-          <i class="fab fa-github"></i>
-        </span>
-        OmniAuth with Microsoft Graph
+    <div class="container has-text-centered">
+      <%= image_pack_tag('kuyio-logo-wordmark-dark.svg') %>
+      <h1 class="title mt-5">
+        OmniAuth::Strategies::MicrosoftGraph
       </h1>
       <h2 class="subtitle">
         Demo Application
       </h2>
+      <%= link_to user_microsoft_graph_omniauth_authorize_path, method: :post, class: "mt-5 button is-white is-outlined" do %>
+        <span class="icon">
+          <i class="fab fa-windows"></i>
+        </span>
+        <span>Sign in with Microsoft</span>
+      <% end %>
     </div>
   </div>
 </section>
