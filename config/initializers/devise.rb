@@ -310,9 +310,14 @@ Devise.setup do |config|
   # config.sign_in_after_change_password = true
 
   # OmniAuth
+
+  #require 'microsoft_graph_auth'
+
   config.omniauth :microsoft_graph,
-                  ENV['AZURE_APP_ID'],
-                  ENV['AZURE_APP_SECRET'],
-                  scope: ENV['AZURE_SCOPES'],
-                  tenant: ENV['AZURE_TENANT']
+                  ENV['dc5bdd61-a4b5-4264-8dcd-237845a153e3'],
+                  ENV['ice8Q~LnNLdvKTE403CNbmWxliRhROzif4oy7dfD'],
+                  scope: ENV['openid profile email offline_access user.read'], # mailboxsettings.read calendars.readwrite'],
+                  tenant: ENV['4b1b908c-5582-4377-ba07-a36d65e34934']
+                  # callback_path: "users/auth/microsoft_graph/callback",
+                  # token_url: '/4b1b908c-5582-4377-ba07-a36d65e34934/oauth2/v2.0/token'
 end
