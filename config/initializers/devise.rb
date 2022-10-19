@@ -314,10 +314,10 @@ Devise.setup do |config|
   #require 'microsoft_graph_auth'
 
   config.omniauth :microsoft_graph,
-                  ENV['dc5bdd61-a4b5-4264-8dcd-237845a153e3'],
-                  ENV['ice8Q~LnNLdvKTE403CNbmWxliRhROzif4oy7dfD'],
-                  scope: ENV['openid profile email offline_access user.read'], # mailboxsettings.read calendars.readwrite'],
-                  tenant: ENV['4b1b908c-5582-4377-ba07-a36d65e34934']
+                  client_id: '7dcbf1df-cffe-4d06-ba8e-1ab2e88fc5c9', #client id
+                  client_secret: 'lIU8Q~CwlPCDPYnXsbfHIxE6MgcxJOie9aMIDbBB', #client secret
+                  scope: 'openid profile email offline_access user.read', # mailboxsettings.read calendars.readwrite'],
+                  tenant_id: '4b1b908c-5582-4377-ba07-a36d65e34934'
                   # callback_path: "users/auth/microsoft_graph/callback",
                   # token_url: '/4b1b908c-5582-4377-ba07-a36d65e34934/oauth2/v2.0/token'
 end
